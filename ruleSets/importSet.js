@@ -1,0 +1,31 @@
+module.exports = {
+  plugins: [
+    'import',
+  ],
+  rules: {
+    'import/default': 'error',
+    'import/export': 'error',
+    'import/extensions': ['error', { js: 'never', jsx: 'never' }],
+    'import/imports-first': 'error',
+    'import/named': 'error',
+    'import/namespace': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-amd': 'error',
+    'import/no-commonjs': 'warn',
+    'import/no-deprecated': 'off',
+    'import/no-duplicates': 'error',
+    'import/no-extraneous-dependencies': 'error',
+    'import/no-mutable-exports': 'warn',
+    'import/no-named-as-default': 'warn',
+    'import/no-named-as-default-member': 'warn',
+    'import/no-namespace': 'error',
+    'import/no-nodejs-modules': 'off',
+    'import/no-restricted-paths': 'off',
+    'import/no-unresolved': 'error',
+    'import/order': 'error',
+    'import/prefer-default-export': 'warn',
+  },
+  settings: {
+    'import/extensions': ['.js', '.jsx'],
+  },
+};

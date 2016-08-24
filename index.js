@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['./react'].map(require.resolve),
+  extends: ['./ruleSets/baseSet', './ruleSets/reactSet', './ruleSets/importSet'].map(require.resolve),
   rules: {},
 };
