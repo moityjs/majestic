@@ -11,6 +11,7 @@ module.exports = {
   rules: {
     'jsx-quotes': 'error',
     'react/display-name': 'off',
+    'react/forbid-component-props': 'off',
     'react/forbid-prop-types': 'warn',
     'react/jsx-boolean-value': 'error',
     'react/jsx-closing-bracket-location': ['error', {
@@ -39,6 +40,7 @@ module.exports = {
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'off',
     'react/no-danger': 'off',
+    'react/no-danger-with-children': 'error',
     'react/no-deprecated': 'warn',
     'react/no-did-mount-set-state': 'off',
     'react/no-did-update-set-state': 'off',

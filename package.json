@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-majestic",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "Majestic code style for ES2015 (ES6) and React 0.14+ (JSX)",
   "main": "index.js",
   "scripts": {
     "find-rules": "eslint-find-rules -n --unused",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,16 +21,17 @@
     "jsx",
     "es6",
     "es2015",
-    "standard"
+    "standard",
+    "awesome",
+    "majestic"
   ],
   "peerDependencies": {
-    "eslint": "^3.2.2"
+    "eslint": "^3.3.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.2",
-    "eslint-find-rules": "^1.11.1",
-    "eslint-plugin-react": "^6.0.0",
-    "eslint-plugin-sorting": "^0.3.0"
+    "eslint": "^3.3.0",
+    "eslint-find-rules": "^1.13.1",
+    "eslint-plugin-react": "^6.1.2"
   },
   "author": "Peet",
   "homepage": "https://github.com/moityjs/majestic#readme"
