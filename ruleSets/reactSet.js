@@ -51,6 +51,7 @@ module.exports = {
     'react/no-set-state': 'off',
     'react/no-string-refs': 'warn',
     'react/no-unknown-property': 'error',
+    'react/no-unused-prop-types': 'warn',
     'react/prefer-es6-class': 'off',
     'react/prefer-stateless-function': 'warn',
     'react/prop-types': 'warn',
@@ -71,6 +72,7 @@ module.exports = {
       ],
     }],
     'react/sort-prop-types': 'off',
+    'react/style-prop-object': 'error',
   },
   settings: {
     react: {
