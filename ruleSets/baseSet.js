@@ -198,7 +198,7 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
     'no-useless-rename': 'error',
-    'no-var': 'off',
+    'no-var': 'error',
     'no-void': 'off',
     'no-warning-comments': 'warn',
     'no-whitespace-before-property': 'error',
@@ -213,7 +213,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'padded-blocks': ['error', 'never'],
     'prefer-arrow-callback': 'warn',
-    'prefer-const': ['warn', {
+    'prefer-const': ['error', {
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
     }],
