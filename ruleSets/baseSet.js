@@ -56,7 +56,7 @@ module.exports = {
     'init-declarations': 'off',
     'key-spacing': 'error',
     'keyword-spacing': 'error',
-    'line-comment-position': ['error', 'above'],
+    'line-comment-position': ['error', { position: 'above' }],
     'linebreak-style': 'error',
     'lines-around-comment': 'off',
     'lines-around-directive': 'off',
