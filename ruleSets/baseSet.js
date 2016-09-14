@@ -12,7 +12,7 @@ module.exports = {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
     },
-    ecmaVersion: 6,
+    ecmaVersion: 2015,
     sourceType: 'module',
   },
   rules: {
@@ -56,8 +56,10 @@ module.exports = {
     'init-declarations': 'off',
     'key-spacing': 'error',
     'keyword-spacing': 'error',
+    'line-comment-position': ['error', 'above'],
     'linebreak-style': 'error',
     'lines-around-comment': 'off',
+    'lines-around-directive': 'off',
     'max-depth': ['error', 4],
     'max-len': ['warn', 180, 2, {
       ignoreComments: false,
@@ -160,6 +162,7 @@ module.exports = {
     'no-restricted-globals': 'off',
     'no-restricted-imports': 'off',
     'no-restricted-modules': 'off',
+    'no-restricted-properties': 'off',
     'no-restricted-syntax': 'off',
     'no-return-assign': 'error',
     'no-script-url': 'error',
@@ -218,6 +221,7 @@ module.exports = {
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
     }],
+    'prefer-numeric-literals': 'error',
     'prefer-reflect': 'off',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',

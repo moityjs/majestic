@@ -1,4 +1,5 @@
+const rulesPath = './ruleSets';
 module.exports = {
-  extends: ['./ruleSets/baseSet', './ruleSets/reactSet', './ruleSets/importSet'].map(require.resolve),
+  extends: require('fs').readdirSync(require('path').resolve(__dirname, rulesPath)).map(set => require.resolve(`${rulesPath}/${set}`)),
   rules: {},
 };
