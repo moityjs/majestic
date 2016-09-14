@@ -1,6 +1,6 @@
 # eslint-config-majestic
 
-[![npm version](https://badge.fury.io/js/eslint-config-majestic.svg)](http://badge.fury.io/js/eslint-config-majestic)
+[![npm version](https://badge.fury.io/js/eslint-config-majestic.svg)](http://badge.fury.io/js/eslint-config-majestic) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-majestic-brightgreen.svg)](http://standardjs.com/)
 
 This package provides a majestic code style as the smartest ESlint shared config.
 
@@ -31,3 +31,4 @@ You will automatically get the ESLint rules defined for the plugin.
 * eslint-plugin-import
 * eslint-plugin-prefer-spread
 * eslint-plugin-you-dont-need-lodash-underscore
+* eslint-plugin-promise
