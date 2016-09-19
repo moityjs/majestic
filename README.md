@@ -32,3 +32,5 @@ You will automatically get the ESLint rules defined for the plugin.
 * eslint-plugin-prefer-spread
 * eslint-plugin-you-dont-need-lodash-underscore
 * eslint-plugin-promise
+* eslint-plugin-more
+* eslint-plugin-filenames

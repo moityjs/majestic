@@ -13,7 +13,7 @@ module.exports = require('../utils/pluginRules').from({
     },
   },
 }).with('react', {
-  'display-name': 'off',
+  'display-name': 'error',
   'forbid-component-props': 'off',
   'forbid-prop-types': 'warn',
   'jsx-boolean-value': 'error',

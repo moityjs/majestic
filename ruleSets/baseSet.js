@@ -136,7 +136,7 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-multiple-empty-lines': ['error', { max: 1 }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0 }],
     'no-native-reassign': 'error',
     'no-negated-condition': 'off',
     'no-negated-in-lhs': 'error',
