@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-majestic",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "description": "Majestic code style for ES2015 (ES6) and React 0.14+ (JSX)",
   "main": "index.js",
   "scripts": {
@@ -33,15 +33,16 @@
     "codependency": "^0.1.4"
   },
   "devDependencies": {
-    "eslint": "^3.5.0",
-    "eslint-find-rules": "^1.13.2",
+    "eslint": "^3.8.1",
+    "eslint-find-rules": "^1.14.0",
     "eslint-plugin-filenames": "^1.1.0",
-    "eslint-plugin-import": "^1.15.0",
-    "eslint-plugin-more": "0.0.2",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-more": "0.0.4",
     "eslint-plugin-prefer-spread": "^1.0.3",
-    "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-react": "^6.3.0",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-react": "^6.4.1",
+    "eslint-plugin-sort-class-members": "^1.1.1",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.2",
     "nodeunit": "^0.10.2"
   },
   "engines": {

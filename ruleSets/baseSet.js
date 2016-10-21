@@ -43,6 +43,7 @@ module.exports = {
     'eol-last': 'error',
     'eqeqeq': ['error', 'allow-null'],
     'func-call-spacing': 'error',
+    'func-name-matching': 'warn',
     'func-names': 'off',
     'func-style': 'off',
     'generator-star-spacing': ['error', { after: true, before: false }],

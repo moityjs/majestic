@@ -34,3 +34,4 @@ You will automatically get the ESLint rules defined for the plugin.
 * eslint-plugin-promise
 * eslint-plugin-more
 * eslint-plugin-filenames
+* eslint-plugin-sort-class-members
