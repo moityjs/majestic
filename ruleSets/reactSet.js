@@ -15,7 +15,7 @@ module.exports = require('../utils/pluginRules').from({
 }).with('react', {
   'display-name': 'error',
   'forbid-component-props': 'off',
-  'forbid-prop-types': 'warn',
+  'forbid-prop-types': ['warn', { forbid: ['any', 'array'] }],
   'jsx-boolean-value': 'error',
   'jsx-closing-bracket-location': ['error', {
     nonEmpty: 'after-props',
