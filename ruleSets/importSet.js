@@ -30,5 +30,5 @@ module.exports = require('../utils/pluginRules').from({
   'no-webpack-loader-syntax': 'warn',
   'order': 'error',
   'prefer-default-export': 'warn',
-  'unambiguous': 'warn',
+  'unambiguous': 'off',
 });
