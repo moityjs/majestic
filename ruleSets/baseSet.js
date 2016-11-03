@@ -203,6 +203,7 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
     'no-useless-rename': 'error',
+    'no-useless-return': 'error',
     'no-var': 'error',
     'no-void': 'off',
     'no-warning-comments': 'warn',
