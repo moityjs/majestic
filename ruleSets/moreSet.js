@@ -1,5 +1,5 @@
 module.exports = require('../utils/pluginRules').with('more', {
-  'classbody-starts-with-newline': ['error', 'never'],
+  'classbody-starts-with-newline': ['error', 'always'],
   'force-native-methods': 'warn',
   'no-duplicated-chains': 'warn',
   'no-numeric-endings-for-variables': 'error',
