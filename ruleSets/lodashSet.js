@@ -19,7 +19,7 @@ module.exports = require('../utils/pluginRules').with('you-dont-need-lodash-unde
   'includes': 'warn',
   'index-of': 'warn',
   'inject': 'warn',
-  'is-na-n': 'warn',
+  'is-nan': 'warn',
   'join': 'warn',
   'keys': 'warn',
   'last-index-of': 'warn',
