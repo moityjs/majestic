@@ -22,7 +22,7 @@ module.exports = require('../utils/pluginRules').from({
   'no-mutable-exports': 'warn',
   'no-named-as-default': 'warn',
   'no-named-as-default-member': 'warn',
-  'no-namespace': 'error',
+  'no-namespace': 'off',
   'no-nodejs-modules': 'off',
   'no-restricted-paths': 'off',
   'no-unassigned-import': 'off',
