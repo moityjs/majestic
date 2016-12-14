@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-majestic",
-  "version": "5.5.3",
+  "version": "5.6.0",
   "description": "Majestic code style for ES2015 (ES6) and React 0.14+ (JSX)",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.0.1",
-    "eslint-plugin-more": "0.0.4",
+    "eslint-plugin-more": "^0.1.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-react": "^6.5.0",
