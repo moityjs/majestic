@@ -15,6 +15,8 @@ module.exports = require('../utils/pluginRules').from({
 }).with('react', {
   'display-name': 'error',
   'forbid-component-props': 'off',
+  'forbid-elements': 'off',
+  'forbid-foreign-prop-types': 'off',
   'forbid-prop-types': ['warn', { forbid: ['any', 'array'] }],
   'jsx-boolean-value': 'error',
   'jsx-closing-bracket-location': ['error', {
@@ -86,4 +88,5 @@ module.exports = require('../utils/pluginRules').from({
   }],
   'sort-prop-types': 'off',
   'style-prop-object': 'error',
+  'void-dom-elements-no-children': 'error',
 });
