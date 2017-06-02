@@ -33,16 +33,16 @@
     "codependency": "^0.1.4"
   },
   "devDependencies": {
-    "eslint": "^3.17.1",
+    "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-filenames": "^1.1.0",
-    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-more": "^0.1.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-sort-class-members": "^1.1.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.4",
     "nodeunit": "^0.10.2"
   },
   "engines": {
