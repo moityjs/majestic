@@ -37,6 +37,7 @@
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-more": "^0.1.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-promise": "^3.5.0",
