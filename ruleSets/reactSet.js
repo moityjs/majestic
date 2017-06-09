@@ -38,7 +38,7 @@ module.exports = require('../utils/pluginRules').from({
   'jsx-no-literals': 'off',
   'jsx-no-target-blank': 'warn',
   'jsx-no-undef': 'error',
-  'jsx-pascal-case': 'error',
+  'jsx-pascal-case': ['error', { allowAllCaps: true }],
   'jsx-sort-props': 'off',
   'jsx-space-before-closing': 'off',
   'jsx-tag-spacing': ['error', {
