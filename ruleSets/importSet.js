@@ -13,6 +13,7 @@ module.exports = require('../utils/pluginRules').from({
   'newline-after-import': 'error',
   'no-absolute-path': 'error',
   'no-amd': 'error',
+  'no-anonymous-default-export': 'warn',
   'no-commonjs': 'warn',
   'no-deprecated': 'off',
   'no-duplicates': 'error',
@@ -29,7 +30,12 @@ module.exports = require('../utils/pluginRules').from({
   'no-unassigned-import': 'off',
   'no-unresolved': 'error',
   'no-webpack-loader-syntax': 'warn',
-  'order': 'error',
+  'order': [
+    'error', {
+      'groups': ['builtin', ['external', 'internal'], 'parent', 'sibling', 'index'],
+      'newlines-between': 'never',
+    },
+  ],
   'prefer-default-export': 'warn',
   'unambiguous': 'off',
 });

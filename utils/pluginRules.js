@@ -20,7 +20,7 @@ const withPlugin = (name, config, rules) => {
 
 const base = config => Object.assign({}, config, {
   with(pluginName, rules) {
-    return base(withPlugin(pluginName, config, rules));
+    return withPlugin(pluginName, config, rules);
   },
 });
 

@@ -27,23 +27,23 @@
     "majestic"
   ],
   "peerDependencies": {
-    "eslint": "^3.17.1"
+    "eslint": "^4.0.0"
   },
   "dependencies": {
     "codependency": "^0.1.4"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
+    "eslint": "^4.0.0",
+    "eslint-find-rules": "^2.1.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-more": "^0.1.1",
+    "eslint-plugin-more": "^0.3.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-sort-class-members": "^1.1.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^5.0.4",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
     "nodeunit": "^0.10.2"
   },
   "engines": {
