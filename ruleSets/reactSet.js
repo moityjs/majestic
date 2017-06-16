@@ -22,7 +22,7 @@ module.exports = require('../utils/pluginRules').from({
   'jsx-boolean-value': 'error',
   'jsx-closing-bracket-location': ['error', { nonEmpty: 'line-aligned', selfClosing: 'line-aligned' }],
   'jsx-closing-tag-location': 'error',
-  'jsx-curly-spacing': ['error', { children: true, when: 'always' }],
+  'jsx-curly-spacing': ['error', { children: true, when: 'never' }],
   'jsx-equals-spacing': 'error',
   'jsx-filename-extension': 'off',
   'jsx-first-prop-new-line': ['error', 'multiline'],
@@ -88,6 +88,5 @@ module.exports = require('../utils/pluginRules').from({
   ],
   'sort-prop-types': 'off',
   'style-prop-object': 'error',
-  'switch-colon-spacing': 'error',
   'void-dom-elements-no-children': 'error',
 });
