@@ -68,7 +68,6 @@ module.exports = require('../utils/pluginRules').from({
   'prop-types': 'warn',
   'react-in-jsx-scope': 'error',
   'require-default-props': 'warn',
-  'require-extension': ['warn', { extensions: ['.js', '.jsx'] }],
   'require-optimization': 'off',
   'require-render-return': 'error',
   'self-closing-comp': 'error',
