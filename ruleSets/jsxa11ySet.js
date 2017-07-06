@@ -2,6 +2,7 @@ module.exports = require('../utils/pluginRules').with('jsx-a11y', {
   'accessible-emoji': 'warn',
   'alt-text': 'warn',
   'anchor-has-content': 'warn',
+  'anchor-is-valid': 'off',
   'aria-activedescendant-has-tabindex': 'warn',
   'aria-props': 'warn',
   'aria-proptypes': 'warn',
