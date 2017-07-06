@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-majestic.svg)](http://badge.fury.io/js/eslint-config-majestic) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-majestic-brightgreen.svg)](http://standardjs.com/)
 
-This package provides a majestic code style as the smartest ESlint shared config.
+This package provides a majestic code style as the smartest ESLint shared config.
 
 ## Usage
 
@@ -17,7 +17,7 @@ It only requires `eslint`.
 1. `npm i -D eslint-config-majestic eslint`
 2. add `"extends": "majestic"` to your .eslintrc
 
-## ESlint Plugins
+## ESLint Plugins
 
 We also provide linting rules for ESLint plugins. To enable them, all you have to do is install the relevant plugin:
 
@@ -27,11 +27,12 @@ You will automatically get the ESLint rules defined for the plugin.
 
 ### Supported plugins
 
-* eslint-plugin-react
-* eslint-plugin-import
-* eslint-plugin-prefer-spread
-* eslint-plugin-you-dont-need-lodash-underscore
-* eslint-plugin-promise
-* eslint-plugin-more
-* eslint-plugin-filenames
-* eslint-plugin-sort-class-members
+* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+* [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+* [eslint-plugin-prefer-spread](https://www.npmjs.com/package/eslint-plugin-prefer-spread)
+* [eslint-plugin-you-dont-need-lodash-underscore](https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore)
+* [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
+* [eslint-plugin-more](https://www.npmjs.com/package/eslint-plugin-more)
+* [eslint-plugin-filenames](https://www.npmjs.com/package/eslint-plugin-filenames)
+* [eslint-plugin-sort-class-members](https://www.npmjs.com/package/eslint-plugin-sort-class-members)
+* [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
