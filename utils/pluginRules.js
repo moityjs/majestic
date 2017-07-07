@@ -7,7 +7,7 @@ const withPlugin = (name, config, rules) => {
   if (plugin) {
     return Object.assign({}, config, {
       plugins: (config.plugins || []).concat(name),
-      rules: Object.keys(rules).reduce((a, rule) => {
+      rules: Object.keys(typeof rules == 'function' ? rules(plugin) : rules).reduce((a, rule) => {
         a[`${name}/${rule}`] = rules[rule];
         return a;
       }, Object.assign({}, config.rules)),
