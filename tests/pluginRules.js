@@ -79,3 +79,13 @@ module.exports.testMergeBaseRules = test => {
   test.equal(Object.keys(mergeBaseRules.rules).length, 2);
   test.done();
 };
+
+module.exports.testNoWithOnConfig = test => {
+  const object = pluginRules.from(base).with('react', {
+    jsx: 'warn',
+  });
+
+  test.notEqual(object.with, null);
+  test.equal(object.config.with, null);
+  test.done();
+};
