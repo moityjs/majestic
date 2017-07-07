@@ -32,11 +32,17 @@ module.exports.testNoExist = test => {
 };
 
 module.exports.testMultiExists = test => {
-  const multiExists = pluginRules.from(base).with('react', {
-    jsx: 'warn',
-  }).with('import', {
-    commonjs: 'warn',
-  });
+  const multiExists = pluginRules.from(base).with([
+    [
+      'react', {
+        jsx: 'warn',
+      },
+    ], [
+      'import', {
+        commonjs: 'warn',
+      },
+    ],
+  ]);
 
   test.equal(multiExists.foo, 'bar');
   test.equal(multiExists.plugins[0], 'react');
@@ -47,11 +53,17 @@ module.exports.testMultiExists = test => {
 };
 
 module.exports.testMultiNoExist = test => {
-  const multiNoExist = pluginRules.from(base).with('react', {
-    jsx: 'warn',
-  }).with('foo', {
-    thing: 'error',
-  });
+  const multiNoExist = pluginRules.from(base).with([
+    [
+      'react', {
+        jsx: 'warn',
+      },
+    ], [
+      'foo', {
+        thing: 'error',
+      },
+    ],
+  ]);
 
   test.equal(multiNoExist.foo, 'bar');
   test.equal(multiNoExist.plugins[0], 'react');
@@ -77,15 +89,5 @@ module.exports.testMergeBaseRules = test => {
   test.equal(mergeBaseRules.rules['react/jsx'], 'warn');
   test.equal(mergeBaseRules.rules.base, 'error');
   test.equal(Object.keys(mergeBaseRules.rules).length, 2);
-  test.done();
-};
-
-module.exports.testNoWithOnConfig = test => {
-  const object = pluginRules.from(base).with('react', {
-    jsx: 'warn',
-  });
-
-  test.notEqual(object.with, null);
-  test.equal(object.config.with, null);
   test.done();
 };
