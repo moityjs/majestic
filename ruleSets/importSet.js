@@ -1,5 +1,5 @@
 module.exports = require('../utils/pluginRules')
-  .from({
+  .configure('import', {
     settings: {
       'import/extensions': ['.js', '.jsx'],
     },

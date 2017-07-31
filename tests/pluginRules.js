@@ -4,7 +4,7 @@ const base = {
 
 const pluginRules = require('../utils/pluginRules');
 
-module.exports.testFrom = test => {
+module.exports.testConfigure = test => {
   test.equal(pluginRules.from(base).foo, 'bar');
   test.done();
 };
@@ -27,7 +27,7 @@ module.exports.testNoExist = test => {
 
   test.equal(noexist.foo, 'bar');
   test.ok(!noexist.plugins);
-  test.equal(Object.keys(noexist.rules).length, 0);
+  test.ok(!noexist.rules);
   test.done();
 };
 
@@ -35,8 +35,8 @@ module.exports.testMultiExists = test => {
   const multiExists = pluginRules.from(base).with([
     [
       'react', {
-        jsx: 'warn',
-      },
+      jsx: 'warn',
+    },
     ], [
       'import', {
         commonjs: 'warn',
@@ -56,8 +56,8 @@ module.exports.testMultiNoExist = test => {
   const multiNoExist = pluginRules.from(base).with([
     [
       'react', {
-        jsx: 'warn',
-      },
+      jsx: 'warn',
+    },
     ], [
       'foo', {
         thing: 'error',
@@ -73,8 +73,8 @@ module.exports.testMultiNoExist = test => {
   test.done();
 };
 
-module.exports.testMergeBaseRules = test => {
-  const mergeBaseRules = pluginRules.from({
+module.exports.testConfigureBaseRules = test => {
+  const configureBaseRules = pluginRules.from({
     foo: 'bar',
     rules: {
       base: 'error',
@@ -83,11 +83,76 @@ module.exports.testMergeBaseRules = test => {
     jsx: 'warn',
   });
 
-  test.equal(mergeBaseRules.foo, 'bar');
-  test.equal(mergeBaseRules.plugins[0], 'react');
-  test.equal(mergeBaseRules.plugins.length, 1);
-  test.equal(mergeBaseRules.rules['react/jsx'], 'warn');
-  test.equal(mergeBaseRules.rules.base, 'error');
-  test.equal(Object.keys(mergeBaseRules.rules).length, 2);
+  test.equal(configureBaseRules.foo, 'bar');
+  test.equal(configureBaseRules.plugins[0], 'react');
+  test.equal(configureBaseRules.plugins.length, 1);
+  test.equal(configureBaseRules.rules['react/jsx'], 'warn');
+  test.equal(configureBaseRules.rules.base, 'error');
+  test.equal(Object.keys(configureBaseRules.rules).length, 2);
+  test.done();
+};
+
+module.exports.testConfigureWithExists = test => {
+  const configured = pluginRules
+    .from(base)
+    .configure('react', config => {
+      test.equal(config.foo, 'bar');
+      return Object.assign(config, {
+        settings: 'something',
+      });
+    })
+    .with();
+
+  test.equal(configured.foo, 'bar');
+  test.equal(configured.settings, 'something');
+  test.done();
+};
+
+module.exports.testConfigureObjectWithExists = test => {
+  const configured = pluginRules
+    .from(base)
+    .configure('react', {
+      settings: 'something',
+    })
+    .with();
+
+  test.equal(configured.foo, undefined);
+  test.equal(configured.settings, 'something');
+  test.done();
+};
+
+module.exports.testMultipleConfigureWithExists = test => {
+  const configured = pluginRules
+    .from(base)
+    .configure('react', config => {
+      test.equal(config.foo, 'bar');
+      return Object.assign(config, {
+        settings: 'something',
+      });
+    })
+    .configure('import', config => {
+      test.equal(config.settings, 'something');
+      test.equal(config.foo, 'bar');
+      return Object.assign(config, {
+        another: 'thing',
+      });
+    })
+    .with();
+
+  test.equal(configured.foo, 'bar');
+  test.equal(configured.settings, 'something');
+  test.equal(configured.another, 'thing');
+  test.done();
+};
+
+module.exports.testConfigureWithNoExists = test => {
+  const configured = pluginRules
+    .from(base)
+    .configure('nothing', () => {
+      test.fail();
+    })
+    .with();
+
+  test.equal(configured.foo, 'bar');
   test.done();
 };

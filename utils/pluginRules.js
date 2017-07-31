@@ -2,9 +2,16 @@ const requirePeer = require('codependency').register(module.parent.parent, {
   index: ['devDependencies'],
 });
 
-const withPlugin = (name, config, rules) => {
+const ifPlugin = (name, config, func) => {
   const plugin = requirePeer(`eslint-plugin-${name}`, { optional: true });
   if (plugin) {
+    return typeof func === 'function' ? func(config, plugin) : func;
+  }
+  return config;
+};
+
+const withPlugin = (name, config, rules) => {
+  return ifPlugin(name, config, (plugin) => {
     const pluginRules = typeof rules === 'function' ? rules(plugin) : rules;
     return Object.assign({}, config, {
       plugins: (config.plugins || []).concat(name),
@@ -13,9 +20,6 @@ const withPlugin = (name, config, rules) => {
         return a;
       }, Object.assign({}, config.rules)),
     });
-  }
-  return Object.assign({}, config, {
-    rules: config.rules || {},
   });
 };
 
@@ -28,6 +32,9 @@ const withAll = (config, plugins) => {
 };
 
 const base = config => Object.assign({}, config, {
+  configure(pluginName, func) {
+    return base(ifPlugin(pluginName, config, func));
+  },
   with(pluginName, rules) {
     if (Array.isArray(pluginName)) {
       return withAll(config, pluginName);

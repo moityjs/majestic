@@ -1,5 +1,5 @@
 module.exports = require('../utils/pluginRules')
-  .from({
+  .configure('react', {
     parserOptions: {
       ecmaFeatures: {
         jsx: true,
