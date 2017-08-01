@@ -112,6 +112,7 @@ module.exports = {
     'func-names': 'off',
     'func-style': 'off',
     'generator-star-spacing': ['error', { after: true, before: false }],
+    'getter-return': 'warn',
     'global-require': 'off',
     'guard-for-in': 'off',
     'handle-callback-err': 'off',

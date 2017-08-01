@@ -5,13 +5,13 @@ const requirePeer = require('codependency').register(module.parent.parent, {
 const ifPlugin = (name, config, func) => {
   const plugin = requirePeer(`eslint-plugin-${name}`, { optional: true });
   if (plugin) {
-    return typeof func === 'function' ? func(config, plugin) : func;
+    return func(plugin);
   }
   return config;
 };
 
-const withPlugin = (name, config, rules) => {
-  return ifPlugin(name, config, (plugin) => {
+const withPlugin = (name, config, rules) =>
+  ifPlugin(name, config, plugin => {
     const pluginRules = typeof rules === 'function' ? rules(plugin) : rules;
     return Object.assign({}, config, {
       plugins: (config.plugins || []).concat(name),
@@ -21,19 +21,14 @@ const withPlugin = (name, config, rules) => {
       }, Object.assign({}, config.rules)),
     });
   });
-};
 
-const withAll = (config, plugins) => {
-  let next = config;
-  for (const [pluginName, rules] of plugins) {
-    next = withPlugin(pluginName, next, rules);
-  }
-  return next;
-};
+const withAll = (config, plugins) =>
+  plugins.reduce((next, [pluginName, rules]) =>
+    withPlugin(pluginName, next, rules), config);
 
 const base = config => Object.assign({}, config, {
   configure(pluginName, func) {
-    return base(ifPlugin(pluginName, config, func));
+    return base(ifPlugin(pluginName, config, plugin => typeof func === 'function' ? func(config, plugin) : func));
   },
   with(pluginName, rules) {
     if (Array.isArray(pluginName)) {

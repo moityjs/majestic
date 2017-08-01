@@ -35,8 +35,8 @@ module.exports.testMultiExists = test => {
   const multiExists = pluginRules.from(base).with([
     [
       'react', {
-      jsx: 'warn',
-    },
+        jsx: 'warn',
+      },
     ], [
       'import', {
         commonjs: 'warn',
@@ -56,8 +56,8 @@ module.exports.testMultiNoExist = test => {
   const multiNoExist = pluginRules.from(base).with([
     [
       'react', {
-      jsx: 'warn',
-    },
+        jsx: 'warn',
+      },
     ], [
       'foo', {
         thing: 'error',
