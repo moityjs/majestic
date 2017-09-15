@@ -44,3 +44,4 @@ You will automatically get the ESLint rules defined for the plugin.
 * [eslint-plugin-prefer-class-properties](https://www.npmjs.com/package/eslint-plugin-prefer-class-properties)
 * [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 * [eslint-plugin-variables](https://www.npmjs.com/package/eslint-plugin-variables)
+* [eslint-plugin-prefer-object-spread](https://www.npmjs.com/package/eslint-plugin-prefer-object-spread)
