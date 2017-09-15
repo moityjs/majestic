@@ -15,6 +15,7 @@ module.exports = require('../utils/pluginRules')
     },
   })
   .with('react', {
+    'boolean-prop-naming': 'off',
     'default-props-match-prop-types': 'warn',
     'display-name': 'error',
     'forbid-component-props': 'off',
@@ -61,9 +62,11 @@ module.exports = require('../utils/pluginRules')
     'no-render-return-value': 'warn',
     'no-set-state': 'off',
     'no-string-refs': 'warn',
+    'no-typos': 'warn',
     'no-unescaped-entities': 'warn',
     'no-unknown-property': 'error',
     'no-unused-prop-types': 'warn',
+    'no-unused-state': 'warn',
     'no-will-update-set-state': 'error',
     'prefer-es6-class': 'off',
     'prefer-stateless-function': 'warn',

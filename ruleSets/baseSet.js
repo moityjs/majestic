@@ -111,6 +111,7 @@ module.exports = {
     'func-name-matching': 'warn',
     'func-names': 'off',
     'func-style': 'off',
+    'function-paren-newline': ['error', 'multiline'],
     'generator-star-spacing': ['error', { after: true, before: false }],
     'getter-return': 'warn',
     'global-require': 'off',
