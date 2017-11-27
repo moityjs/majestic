@@ -8,5 +8,6 @@ module.exports = require('../utils/pluginRules')
     'no-disabled-tests': 'warn',
     'no-focused-tests': 'error',
     'no-identical-title': 'error',
+    'prefer-to-have-length': 'warn',
     'valid-expect': 'error',
   });

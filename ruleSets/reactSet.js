@@ -16,7 +16,9 @@ module.exports = require('../utils/pluginRules')
   })
   .with('react', {
     'boolean-prop-naming': 'off',
+    'button-has-type': 'warn',
     'default-props-match-prop-types': 'warn',
+    'destructuring-assignment': 'warn',
     'display-name': 'error',
     'forbid-component-props': 'off',
     'forbid-elements': 'off',
@@ -25,6 +27,7 @@ module.exports = require('../utils/pluginRules')
     'jsx-boolean-value': 'error',
     'jsx-closing-bracket-location': ['error', { nonEmpty: 'line-aligned', selfClosing: 'line-aligned' }],
     'jsx-closing-tag-location': 'error',
+    'jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'jsx-curly-spacing': ['error', { children: true, when: 'never' }],
     'jsx-equals-spacing': 'error',
     'jsx-filename-extension': 'off',
@@ -40,6 +43,7 @@ module.exports = require('../utils/pluginRules')
     'jsx-no-literals': 'off',
     'jsx-no-target-blank': 'warn',
     'jsx-no-undef': 'error',
+    'jsx-one-expression-per-line': 'error',
     'jsx-pascal-case': ['error', { allowAllCaps: true }],
     'jsx-sort-props': 'off',
     'jsx-space-before-closing': 'off',
@@ -47,6 +51,7 @@ module.exports = require('../utils/pluginRules')
     'jsx-uses-react': 'error',
     'jsx-uses-vars': 'error',
     'jsx-wrap-multilines': 'off',
+    'no-access-state-in-setstate': 'warn',
     'no-array-index-key': 'error',
     'no-children-prop': 'error',
     'no-danger': 'off',

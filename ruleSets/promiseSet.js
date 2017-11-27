@@ -7,6 +7,7 @@ module.exports = require('../utils/pluginRules')
     'no-native': 'off',
     'no-nesting': 'warn',
     'no-promise-in-callback': 'off',
+    'no-return-in-finally': 'error',
     'no-return-wrap': 'error',
     'param-names': 'error',
     'prefer-await-to-callbacks': 'off',

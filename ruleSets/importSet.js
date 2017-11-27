@@ -7,6 +7,7 @@ module.exports = require('../utils/pluginRules')
   .with('import', {
     'default': 'error',
     'export': 'error',
+    'exports-last': 'off',
     'extensions': ['error', { js: 'never', jsx: 'never' }],
     'first': 'error',
     'max-dependencies': 'off',
