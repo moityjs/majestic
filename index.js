@@ -1,5 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+
 const rulesPath = './ruleSets';
+const overridersPath = './overriders';
+
+const configs = (...paths) => [].concat(...paths.map(pathName => fs.readdirSync(path.resolve(__dirname, pathName)).map(name => require.resolve(`${pathName}/${name}`)).sort()));
+
 module.exports = {
-  extends: require('fs').readdirSync(require('path').resolve(__dirname, rulesPath)).map(name => require.resolve(`${rulesPath}/${name}`)),
+  extends: configs(rulesPath, overridersPath),
   rules: {},
 };

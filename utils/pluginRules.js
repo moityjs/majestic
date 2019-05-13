@@ -1,6 +1,4 @@
-const requirePeer = require('codependency').register(module.parent.parent, {
-  index: ['devDependencies'],
-});
+const { requirePeer } = require('./module');
 
 const ifPlugin = (name, config, func) => {
   const plugin = requirePeer(`eslint-plugin-${name}`, { optional: true });

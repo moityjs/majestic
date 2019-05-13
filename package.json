@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-majestic",
-  "version": "7.4.1",
+  "version": "8.0.0",
   "description": "Majestic code style for ES2015 (ES6) and React 0.14+ (JSX)",
   "main": "index.js",
   "scripts": {
@@ -27,33 +27,33 @@
     "majestic"
   ],
   "peerDependencies": {
-    "eslint": "^4.0.0"
-  },
-  "dependencies": {
-    "codependency": "^0.1.4"
+    "eslint": "^5.16.0"
   },
   "devDependencies": {
-    "eslint": "^4.12.1",
-    "eslint-find-rules": "^3.1.1",
-    "eslint-plugin-class-property": "^1.0.6",
-    "eslint-plugin-css-modules": "^2.7.5",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^21.3.2",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-more": "^0.3.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-class-property": "^1.1.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-more": "^0.3.2",
     "eslint-plugin-mysticatea": "^4.2.4",
-    "eslint-plugin-optimize-regex": "^1.1.5",
+    "eslint-plugin-optimize-regex": "^1.1.6",
     "eslint-plugin-prefer-class-properties": "^1.0.0",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-prefer-spread": "^1.0.3",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.5.1",
-    "eslint-plugin-sort-class-members": "^1.2.2",
-    "eslint-plugin-unicorn": "^3.0.0",
-    "eslint-plugin-variables": "^1.0.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
-    "nodeunit": "^0.10.2"
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-sort-class-members": "^1.4.0",
+    "eslint-plugin-unicorn": "^8.0.2",
+    "eslint-plugin-variables": "^1.0.3",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.4.0",
+    "nodeunit": "^0.11.3"
   },
   "engines": {
     "node": ">=6.0.0"

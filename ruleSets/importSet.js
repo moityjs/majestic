@@ -6,10 +6,12 @@ module.exports = require('../utils/pluginRules')
   })
   .with('import', {
     'default': 'error',
+    'dynamic-import-chunkname': 'warn',
     'export': 'error',
     'exports-last': 'off',
     'extensions': ['error', { js: 'never', jsx: 'never' }],
     'first': 'error',
+    'group-exports': 'off',
     'max-dependencies': 'off',
     'named': 'error',
     'namespace': 'error',
@@ -18,6 +20,8 @@ module.exports = require('../utils/pluginRules')
     'no-amd': 'error',
     'no-anonymous-default-export': 'warn',
     'no-commonjs': 'warn',
+    'no-cycle': 'off',
+    'no-default-export': 'off',
     'no-deprecated': 'off',
     'no-duplicates': 'error',
     'no-dynamic-require': 'off',
@@ -27,11 +31,16 @@ module.exports = require('../utils/pluginRules')
     'no-named-as-default': 'error',
     'no-named-as-default-member': 'warn',
     'no-named-default': 'warn',
+    'no-named-export': 'off',
     'no-namespace': 'off',
     'no-nodejs-modules': 'off',
+    'no-relative-parent-imports': 'off',
     'no-restricted-paths': 'off',
+    'no-self-import': 'error',
     'no-unassigned-import': 'off',
     'no-unresolved': 'error',
+    'no-unused-modules': 'error',
+    'no-useless-path-segments': 'error',
     'no-webpack-loader-syntax': 'warn',
     'order': [
       'error', {
