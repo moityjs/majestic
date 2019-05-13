@@ -66,7 +66,7 @@ By installing [eslint-config-prettier](https://www.npmjs.com/package/eslint-conf
 
 Note: Majestic won't run Prettier - to get eslint to run it for you, you can install [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
 
-`npm i -D eslint-plugin-react`
+`npm i -D eslint-plugin-prettier`
 
 #### Example .eslintrc.json
 ```json
